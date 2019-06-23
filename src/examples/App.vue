@@ -63,6 +63,11 @@
       <div>{{linkModel}}</div>
     </div>
 
+    <div class="sample">
+      <h2>Sample 9: Changed language</h2>
+      <froala :config="frConfig"></froala>
+    </div>
+
   </div>
 </template>
 
@@ -117,7 +122,7 @@ export default {
       imgModel: {
         src: require('./image.jpg')
       },
-      imageOptions: {
+      imagesOptions: {
         vueIgnoreAttrs: ['style']
       },
 
@@ -148,6 +153,11 @@ export default {
       },
       linkModel: {
         href: 'https://www.froala.com/wysiwyg-editor'
+      },
+
+      // Sample 9
+      frConfig:{
+        language: 'de'
       }
     }
   },
